@@ -14,6 +14,36 @@ body {
   flex-wrap: wrap;
 }
 
+#create-twit-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 30px;
+  font-size: 30px;
+  background-color: #ff1010;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#create-twit-button:hover,
+#create-twit-button:focus {
+  right: 27px;
+  bottom: 27px;
+  height: 66px;
+  width: 66px;
+  border-radius: 33px;
+  font-size: 36px;
+  background-color: #319df6;
+}
+
+#create-twit-button:focus {
+  outline: none;
+}
+
 /*h1,
 h2 {
   color: #333333;

@@ -4,7 +4,7 @@ import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 
 function Button() {
     return (
-    <button type="button" className="create-twit-button">
+    <button type="button" id="create-twit-button">
         <FontAwesomeIcon icon={faBullhorn} />
     </button>
     );
