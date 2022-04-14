@@ -1,3 +1,5 @@
+/*This is responsible for the delete button on each card.*/
+
 import { useState } from 'react';
 import Modal from './Modal';
 import Backdrop from './Backdrop';

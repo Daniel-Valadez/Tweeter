@@ -8,7 +8,13 @@ body {
   background-color: #eee;
 }
 
-h1,
+.twitContainer {
+  margin: 50px 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*h1,
 h2 {
   color: #333333;
 }
@@ -71,4 +77,4 @@ h2 {
   height: 100vh;
   top: 0;
   left: 0;
-}
+}*/
