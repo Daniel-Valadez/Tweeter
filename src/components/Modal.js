@@ -17,15 +17,20 @@
     );
 }*/
 
+import { useState, useRef } from 'react';
+
 function Modal(props){
+    const authorInput = useRef(null); 
+    const twitInput = useRef(null); 
+
     function cancelHandler(){
         props.onCancel(); 
     }
 
     //The confirmation needs to the add a Twit to the DOM
     function confirmHandler(){
-
-        //This will be the function to add to the DOM. 
+        //Add to the DOM and then close the modal. 
+        
         props.onConfirm();
     }
     return(
@@ -38,16 +43,16 @@ function Modal(props){
                 <div className="modal-body">
                     <div className="twit-input-element">
                         <label for="twit-text-input">Twit text</label>
-                        <textarea id="twit-text-input"></textarea>
+                        <textarea id="twit-text-input" ref={twitInput}></textarea>
                     </div>
                     <div className="twit-input-element">
                         <label for="twit-attribution-input">Author</label>
-                        <input type="text" id="twit-attribution-input"></input>
+                        <input type="text" id="twit-attribution-input" ref={authorInput}></input>
                     </div>
                 </div>
                 <div className="modal-footer">
                     <button type="button" className="modal-cancel-button" onClick={cancelHandler}>Cancel</button>
-                    <button type="button" className="modal-accept-button">Create Twit</button>
+                    <button type="button" className="modal-accept-button" onClick={confirmHandler}>Create Twit</button>
                 </div>
             </div>
         </div>
