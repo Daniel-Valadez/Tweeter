@@ -1,12 +1,13 @@
 //import Backdrop from "./components/Backdrop";
 import Todo from "./components/Todo";
-//import Modal from "./components/Modal";
+import Modal from "./components/Modal";
 import Navbar from "./components/layout/navbar";
 import Twit from "./components/section/twit";
 import Button from "./components/Button";
 
 //So now the data that will create the first twits seen on the page will be imported.
 import twitData from "./twitData.json";
+
 function App() {
   return (
     <div>
@@ -24,7 +25,7 @@ function App() {
           }),
         ]}
       </div>
-      <Button /> 
+      <Button />
     </div>
   );
 }
