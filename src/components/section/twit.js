@@ -3,8 +3,6 @@ import cx from "classnames";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 
-//Passing in the props that will become the twit.author
-//and the twit.text.
 function Twit(props) {
   return (
     <article className={style.twit}>
